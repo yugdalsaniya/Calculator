@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #000000;
+  padding: 25px;
+  width: 350px;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+.calc-text {
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+
+.calc-text p {
+  width: 100%;
+  font-size: 3.5rem;
+  text-align: end;
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+button {
+  background: #2d2d2f;
+  color: #fff;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 70%;
+  cursor: pointer;
+  height: 65px;
+  width: 65px;
+}
+
+button:active,
+button:focus {
+  filter: brightness(125%);
+}
+
+.calc-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 15px;
+  grid-column-gap: 10px;
+}
+
+.key-zero {
+  grid-column: span 2;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.key-operate {
+  background: #2d2d2f;
+  color: green;
+}
+
+.key-others {
+  background: #2d2d2f;
+  color: green;
+
+}
+
+.key-others:first-child {
+  color: red;
+}
+
+.key-operate:nth-child(19) {
+  background-color: green;
+  color: white;
+}
+
+.big {
+  font-size: 1.5rem;
+}
